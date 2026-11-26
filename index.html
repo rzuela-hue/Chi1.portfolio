@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Rachel B. Zuela</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h2>Rachel.</h2>
-    <nav>
-        <a href="index.html">Home</a>
+<header class="site-header">
+    <a class="brand" href="index.html">Rachel<span>.</span></a>
+
+    <nav class="nav">
+        <a class="active" href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="skills.html">Skills</a>
         <a href="goals.html">Goals</a>
@@ -18,35 +21,76 @@
 </header>
 
 <main>
-    <section class="home">
-        <p class="eyebrow">PERSONAL PORTFOLIO 2026</p>
-        <h1>Hello, I'm <span>Rachel B. Zuela.</span></h1>
-        <p>A first-year Bachelor of Science in Information Systems student at Naga College Foundation, BSIS 1A.</p>
-        <p>Welcome to my personal portfolio! This website introduces who I am, my skills, and my goals in technology.</p>
-        <p><a class="button" href="about.html">Get to Know Me</a></p>
-        <p><a class="button secondary" href="skills.html">Explore My Skills</a></p>
-        <img src="photo1.jpg" alt="Rachel B. Zuela" width="250">
-    </section>
+<section class="hero container">
 
-    <section class="card">
-        <h2>Nickname</h2>
-        <p>Chichi</p>
-    </section>
+    <div class="hero-copy">
+        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
 
-    <section class="card">
-        <h2>Program</h2>
-        <p>BS Information Systems</p>
-    </section>
+        <h1>Hi, I'm <span>RACHEL B. ZUELA</span></h1>
 
-    <section class="card">
-        <h2>School</h2>
-        <p>Naga College Foundation</p>
-    </section>
+        <h2>BSIS Student | Future IT Professional</h2>
+
+        <p class="lead">
+            I am a first-year Bachelor of Science in Information
+            Systems student at Naga College Foundation.
+            I am beginning my journey in technology with curiosity,
+            creativity, and a willingness to learn.
+        </p>
+
+        <div class="actions">
+            <a class="btn" href="about.html">Get to know me</a>
+            <a class="btn btn-outline" href="contact.html">Contact me</a>
+        </div>
+    </div>
+
+    <div class="portrait-wrap">
+        <div class="portrait">
+            <img src="profile.jpg" alt="Portrait of Rachel B. Zuela">
+            <span class="initials">RZ</span>
+        </div>
+        <span class="float-note">Learning • Growing • Creating</span>
+    </div>
+
+</section>
+
+<section class="container section">
+
+    <div class="section-heading">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>Small facts, big dreams.</h2>
+    </div>
+
+    <div class="facts-grid">
+
+        <article class="fact-card">
+            <span>01</span>
+            <p> NAGA CITY</p>
+        </article>
+
+        <article class="fact-card">
+            <span>02</span>
+            <h3>Favorite Subject</h3>
+            <p>[Your favorite subject]</p>
+        </article>
+
+        <article class="fact-card">
+            <span>03</span>
+            <h3>Dream Job</h3>
+            <p> Web Developer</p>
+        </article>
+
+    </div>
+</section>
+
+<section class="quote-band">
+    <p>"Every skill begins with the courage to try."</p>
+    <span>My learning mindset</span>
+</section>
+
 </main>
 
-<footer>
+<footer class="footer">
     <p>© 2026 Rachel B. Zuela</p>
-    <p>Designed with love ♡</p>
 </footer>
 
 </body>
