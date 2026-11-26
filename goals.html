@@ -1,72 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goals | Rachel B. Zuela</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h2>Rachel.</h2>
-    <nav>
+    <div class="logo">Rachel<span>.</span></div>
+
+    <nav id="navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="skills.html">Skills</a>
-        <a href="goals.html">Goals</a>
+        <a href="goals.html" class="active">Goals</a>
         <a href="contact.html">Contact</a>
     </nav>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
 </header>
 
-<main>
-    <h1>My Goals</h1>
-    <p>My dreams and plans for the future.</p>
+<main class="container">
+
+    <h1 class="page-title">My <span>Goals</span></h1>
 
     <section class="card">
-        <h2>Three Goals for This Semester</h2>
+
+        <h2>Three Goals This Semester</h2>
+
         <ol>
-            <li>Improve my programming skills.</li>
-            <li>Submit my activities on time.</li>
-            <li>Improve my confidence and communication.</li>
+            <li>Improve my knowledge in programming.</li>
+            <li>Complete all my school activities on time.</li>
+            <li>Get good grades in all my subjects.</li>
         </ol>
+
     </section>
 
     <section class="card">
-        <h2>My Five-Year Goal</h2>
-        <p>I want to finish my Information Systems degree, improve my technology skills, and find a good job in the future.</p>
+
+        <h2>My Career Goal for the Next Five Years</h2>
+
+        <p>
+            Five years from now, I want to become a
+            successful IT professional. I want to
+            finish my college education, gain more
+            knowledge about technology, and improve
+            my programming skills.
+
+            I also want to find a good job where I
+            can use my knowledge and help my family
+            achieve a better future.
+        </p>
+
     </section>
 
     <section class="card">
-        <h2>Technology in My Daily Life</h2>
+
+        <h2>How I Use Technology Every Day</h2>
+
         <ol>
-            <li>I use gadgets for studying.</li>
-            <li>I use applications for schoolwork.</li>
-            <li>I use the internet to learn new things.</li>
+            <li>I use my phone to communicate with my family and friends.</li>
+            <li>I use the internet to search for information.</li>
+            <li>I use applications for my school activities.</li>
         </ol>
+
     </section>
 
     <section class="card">
-        <h2>One Technology Risk</h2>
-        <p>Spending too much time online. I can avoid this by managing my screen time.</p>
+
+        <h2>One Risk of Technology</h2>
+
+        <p>
+            One risk of technology is spending too much
+            time on social media. It can affect my studies
+            and waste my time.
+
+            I handle this by managing my screen time
+            and focusing on my responsibilities.
+        </p>
+
     </section>
 
     <section class="card">
+
         <h2>Three Lessons I Learned</h2>
+
         <ol>
-            <li>Time management is important.</li>
-            <li>Practice helps me improve.</li>
-            <li>Technology makes life easier.</li>
+            <li>I learned the basic concepts of programming.</li>
+            <li>I learned how to create HTML and CSS codes.</li>
+            <li>I learned the importance of problem-solving.</li>
         </ol>
+
     </section>
 
     <section class="card">
+
         <h2>How I Learn Best</h2>
-        <p>I learn best through examples, practice, and step-by-step instructions.</p>
+
+        <p>
+            I learn best through examples, demonstrations,
+            and hands-on activities. I understand lessons
+            better when I practice them by myself.
+        </p>
+
     </section>
+
 </main>
 
 <footer>
     <p>© 2026 Rachel B. Zuela</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
