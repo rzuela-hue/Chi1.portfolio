@@ -1,73 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills | Rachel B. Zuela</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h2>Rachel.</h2>
-    <nav>
+<header class="site-header">
+    <a class="brand" href="index.html">Rachel<span>.</span></a>
+    <nav class="nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
+        <a class="active" href="skills.html">Skills</a>
         <a href="goals.html">Goals</a>
         <a href="contact.html">Contact</a>
     </nav>
 </header>
 
-<main>
-    <h1>My Skills</h1>
-    <p>These are the skills I have learned.</p>
+<main class="container page-main">
 
-    <section class="card">
-        <h2>Technical Skills</h2>
-        <p>HTML - Beginner</p>
-        <p>CSS - Beginner</p>
-        <p>Programming - Beginner</p>
-        <p>Computer Operation - Intermediate</p>
-        <p>Document Formatting - Intermediate</p>
-    </section>
+<section class="page-intro">
+    <p class="eyebrow">WHAT I CAN DO</p>
+    <h1>My <span>Skills</span></h1>
+    <p>My abilities, knowledge, and skills that I continue to develop.</p>
+</section>
 
-    <section class="card">
-        <h2>Tools and Applications</h2>
-        <ul>
-            <li>Visual Studio Code</li>
-            <li>Canva</li>
-            <li>Microsoft Word</li>
-            <li>Microsoft PowerPoint</li>
-            <li>Google Docs</li>
-        </ul>
-    </section>
+<section class="content-card">
+    <h2>Technical Skills</h2>
 
-    <section class="card">
-        <h2>Soft Skills</h2>
-        <h3>Communication</h3>
-        <p>I can share my ideas and ask questions.</p>
-        <h3>Time Management</h3>
-        <p>I organize my school activities and tasks.</p>
-        <h3>Adaptability</h3>
-        <p>I am willing to learn new things.</p>
-    </section>
+    <div class="skill">
+        <div><b>HTML</b><span>Beginner</span></div>
+        <div class="bar"><i style="width:35%"></i></div>
+    </div>
 
-    <section class="card">
-        <h2>Skills I Want to Learn</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>Database Design and SQL</li>
-        </ul>
-    </section>
+    <div class="skill">
+        <div><b>CSS</b><span>Beginner</span></div>
+        <div class="bar"><i style="width:30%"></i></div>
+    </div>
 
-    <section class="card">
-        <h2>Certificate / Achievement</h2>
-        <p>Title: Best in Research and Academic Awardee</p>
-        <p>Issuer: Carolina National High School</p>
-        <p>Year: 2025</p>
-    </section>
+    <div class="skill">
+        <div><b>C Programming</b><span>Beginner</span></div>
+        <div class="bar"><i style="width:25%"></i></div>
+    </div>
+
+    <div class="skill">
+        <div><b>Microsoft Word</b><span>Intermediate</span></div>
+        <div class="bar"><i style="width:60%"></i></div>
+    </div>
+
+    <div class="skill">
+        <div><b>Canva</b><span>Intermediate</span></div>
+        <div class="bar"><i style="width:60%"></i></div>
+    </div>
+</section>
+
+<section class="content-card">
+    <h2>Tools and Applications</h2>
+
+    <ul class="simple-list">
+        <li>Visual Studio Code</li>
+        <li>Canva</li>
+        <li>Microsoft Word</li>
+        <li>Microsoft PowerPoint</li>
+        <li>Google Docs</li>
+    </ul>
+</section>
+
+<section class="content-card">
+    <h2>Soft Skills</h2>
+
+    <h3>Communication</h3>
+    <p>I can share my ideas and ask questions.</p>
+
+    <h3>Time Management</h3>
+    <p>I organize my school activities and tasks.</p>
+
+    <h3>Adaptability</h3>
+    <p>I am willing to learn new things.</p>
+</section>
+
+<section class="content-card">
+    <h2>Skills I Want to Learn</h2>
+
+    <ul class="simple-list">
+        <li>JavaScript</li>
+        <li>Database Design and SQL</li>
+    </ul>
+</section>
+
+<section class="content-card">
+    <h2>Certificate / Achievement</h2>
+
+    <p><b>Title:</b> Best in Research and Academic Awardee</p>
+
+    <p><b>Issuer:</b> Carolina National High School</p>
+
+    <p><b>Year:</b> 2025</p>
+</section>
+
 </main>
 
-<footer>
+<footer class="footer">
     <p>© 2026 Rachel B. Zuela</p>
 </footer>
 
