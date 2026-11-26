@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap');
+/* GENERAL DESIGN */
 
 * {
     margin: 0;
@@ -7,142 +7,338 @@
 }
 
 body {
-    font-family: 'DM Sans', Arial, sans-serif;
-    background: #fffdfd;
-    color: #493640;
+    background-color: #fff0f5;
+    color: #593b49;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
+/* HEADER */
+
 header {
-    background: white;
-    padding: 15px 20px;
-    border-bottom: 1px solid #ead8df;
+    background-color: white;
+    padding: 20px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
+    box-shadow: 0 3px 10px #e8c5d4;
 }
 
-header h2 {
-    color: #96516f;
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #bd527d;
 }
 
-nav {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
+.logo span {
+    color: #ed9cbd;
 }
 
 nav a {
-    color: #806b76;
     text-decoration: none;
-    padding: 6px;
-}
-
-nav a:hover {
-    color: #b96f8d;
-}
-
-main {
-    max-width: 1000px;
-    margin: auto;
-    padding: 30px 20px;
-}
-
-h1, h2, h3 {
-    margin-bottom: 12px;
-}
-
-h1 {
-    font-size: 36px;
-}
-
-h1 span {
-    color: #96516f;
-}
-
-p {
-    margin-bottom: 12px;
-}
-
-ul, ol {
-    padding-left: 25px;
-    margin-bottom: 12px;
-}
-
-li {
-    margin-bottom: 6px;
-}
-
-.card {
-    background: white;
-    border: 1px solid #ead8df;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 20px 0;
-}
-
-.home {
-    background: #faedf2;
-    padding: 25px;
-    border-radius: 15px;
-    margin-bottom: 25px;
-}
-
-.home img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-    margin-top: 20px;
-}
-
-.eyebrow {
-    color: #b96f8d;
+    color: #593b49;
+    margin: 10px;
     font-weight: bold;
 }
 
+nav a:hover,
+nav a.active {
+    color: #d65d91;
+}
+
+.menu-btn {
+    display: none;
+    background: #d65d91;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* HOME PAGE */
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px 8%;
+    gap: 40px;
+}
+
+.home-content {
+    max-width: 550px;
+    animation: slideIn 1s;
+}
+
+.home-content h3 {
+    color: #bd527d;
+}
+
+.home-content h1 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.home-content h1 span {
+    color: #d65d91;
+}
+
+.home-content h2 {
+    margin-bottom: 15px;
+}
+
+.home-content p {
+    margin-bottom: 15px;
+}
+
+.home-image img {
+    width: 280px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 50% 50% 20px 20px;
+    border: 8px solid white;
+    box-shadow: 0 5px 20px #dfafc3;
+}
+
+/* BUTTONS */
+
 .button {
     display: inline-block;
-    background: #b96f8d;
+    background-color: #d65d91;
     color: white;
-    padding: 9px 16px;
-    border-radius: 20px;
     text-decoration: none;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
 }
 
-.button.secondary {
-    background: white;
-    color: #96516f;
-    border: 1px solid #b96f8d;
+.button:hover {
+    background-color: #a93f70;
+    transform: translateY(-3px);
 }
 
-.card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    margin: 8px;
+/* QUICK FACTS */
+
+.quick-facts {
+    text-align: center;
+    padding: 50px 7%;
 }
+
+.fact-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.fact {
+    background-color: white;
+    padding: 25px;
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px #e8c5d4;
+}
+
+.fact h3 {
+    color: #d65d91;
+}
+
+/* OTHER PAGES */
+
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.page-title {
+    text-align: center;
+    color: #593b49;
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.page-title span {
+    color: #d65d91;
+}
+
+/* CONTENT CARDS */
+
+.card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px #e8c5d4;
+    animation: fadeIn 1s;
+}
+
+.card h2 {
+    color: #bd527d;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #d65d91;
+    margin-top: 10px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.card ul,
+.card ol {
+    padding-left: 25px;
+}
+
+/* EDUCATION */
+
+.education {
+    background-color: #fff0f5;
+    padding: 18px;
+    margin: 15px 0;
+    border-left: 5px solid #d65d91;
+    border-radius: 8px;
+}
+
+/* PHOTO GALLERY */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 220px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid #f5c4d8;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* CONTACT FORM */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    padding: 12px;
+    margin: 8px 0 18px;
+    border: 1px solid #e5a9c2;
+    border-radius: 8px;
+    font-family: Arial;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #d65d91;
+}
+
+/* FOOTER */
 
 footer {
+    background-color: #d65d91;
+    color: white;
     text-align: center;
     padding: 20px;
-    background: #faedf2;
-    color: #806b76;
     margin-top: 30px;
 }
 
-@media (max-width: 600px) {
+/* ANIMATIONS */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
     header {
-        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .menu-btn {
+        display: block;
     }
 
     nav {
-        justify-content: center;
+        display: none;
+        width: 100%;
+        text-align: center;
     }
 
-    h1 {
+    nav.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 8px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-content h1 {
         font-size: 30px;
+    }
+
+    .fact-container {
+        flex-direction: column;
+    }
+
+    .fact {
+        width: 100%;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 300px;
     }
 }
